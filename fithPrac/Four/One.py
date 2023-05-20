@@ -5,7 +5,7 @@ import deal
 @deal.post(lambda a, b, result: result == a / b)
 @deal.ensure(lambda a, b, result: b != 0 or result is None)
 @deal.raises(ZeroDivisionError)
-@deal.reason("b cannot be 0")
+@deal.reason(lambda b: b != 0)
 def divide(a: float, b: float) -> float:
     """
     Divide two numbers.

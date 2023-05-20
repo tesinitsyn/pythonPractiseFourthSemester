@@ -1,5 +1,4 @@
 import pytest
-from One import add, subtract, multiply, divide
 
 def add(a, b):
     return a + b

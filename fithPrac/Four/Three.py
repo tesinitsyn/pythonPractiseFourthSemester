@@ -6,7 +6,6 @@ def my_function(my_list):
     return len(my_list)
 
 
-import deal
 
 
 @deal.hasattr("name")
